@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Imagen de fondo</title>
+    <style>
+        .seccion1{
+            height: 700px;
+            /* background-color: coral; */
+            border: solid 1px black;
+            margin: 10px;
+            background-image: url(imagen/bg-1.jpg);
+            background-size: auto 50px;
+            background-repeat: space;
+        }
+        .seccion2{
+            height: 700px;
+            background-color: rgb(53, 124, 89);
+            border: solid 1px black;
+            margin: 10px;
+            background-image: url(imagen/bg-2.png);
+            background-size: contain;
+            background-attachment: fixed;
+        }
+        .seccion3{
+            height: 700px;
+            background-color: rgb(61, 91, 126);
+            border: solid 1px black;
+            margin: 10px;
+            /* color image position size repeat atachment*/
+            background: url(imagen/bg-3.jpg) center left no-repeat fixed ;
+            /* background-image: url(imagen/bg-3.jpg);
+            background-size: contain;
+            background-repeat: no-repeat;
+            background-size: 800px 400px;
+            background-position: center left;
+            background-attachment: fixed; */
+
+        }
+        .seccion4{
+            height: 700px;
+            background-color: rgb(61, 91, 126);
+            border: solid 1px black;
+            margin: 10px;
+            background-image: linear-gradient( 200deg, black, rgb(87, 146, 214))
+        }
+        p{
+            color: aliceblue;
+            font-size: 36px;
+            display: inline  ;
+        }
+    </style>
+</head>
+<body>
+    <h1>Imagenes de fondo con CSS</h1>
+    <section class="seccion1"></section>
+    <section class="seccion2">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt in, delectus, nostrum asperiores ullam accusantium sed ex error similique fugiat nobis et quisquam. Fugiat deserunt, quas commodi ducimus ut corporis.</p>
+        <p>Soy un parrafo en linea</p>
+    </section>
+    <section class="seccion3"></section>
+    <section class="seccion4"></section>
+</body>
+</html>
